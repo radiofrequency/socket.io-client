@@ -13,20 +13,6 @@ module.exports = {
     global: glob()
   },
   devtool: 'source-map',
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        screw_ie8: false
-      },
-      mangle: {
-        screw_ie8: false
-      },
-      output: {
-        screw_ie8: false,
-        beautify: false
-      }
-    })
-  ],
   module: {
     loaders: [{
       test: /\.js$/,
